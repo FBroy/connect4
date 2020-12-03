@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Connect Four</title>
+        <link rel="stylesheet" href = "/stylesheets/style.css"></link>
+        <script src="javascripts/mainMenu.js"></script>
+    </head>
+    <body>
+        <div id = "container">
+            <div id = "title">ect </div>
+
+            <a href="game.html">
+                <button>Play</button>
+            </a>
+            
+            <div id = "description">
+                The goal of the game is to get 4 of your coins in a row.
+                <br>
+                Either diagonally, horizontally or vertically.
+                <br>
+                Press Play to search for a game.
+            </div>
+            <div id = "stats">
+                <div id = "stat1">
+                Players ingame: <%= players %>
+                </div>
+                <div id = "stat2">
+                    Games in progress: <%= gamesInProgress %>
+                </div>
+                <div id= "stat3">
+                   Total games played: <%= gameCounter %>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

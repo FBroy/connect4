@@ -1,0 +1,90 @@
+body {
+  background-color: #008a64;
+  padding: 0;
+  margin: 0;
+}
+
+@keyframes colorchanger {
+  0%   {color: red;}
+  25%  {color: darkred;}
+  50%  {color: black;}
+  75%  {color: darkred;}
+  100% {color: red;}
+}
+
+#title {
+  position: absolute;
+  top: 0%;
+  height: 25%;
+  font: bold;
+  width: 100%;
+  text-align: center;
+  font-size: 1000%;
+  color: red;
+  animation-name: colorchanger;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+#title:hover {
+  font-size: 1200%;
+}
+
+#title::before {
+  content: "Conn";
+}
+
+#title::after {
+  content: "Four";
+}
+
+button {
+  position: absolute;
+  width: 25%;
+  height: 20%;
+  font-size: 400%;
+  border-radius: 10%;
+  top: 40%;
+  left: 39%;
+  border-style: solid;
+  border-color: #262626;
+  border-width: 2%;
+  transition: 1s;
+}
+
+button:hover {
+  background-color: orange;
+}
+
+button:active {
+  transition-duration: 1s;
+  font-size: 600%;
+  border-width: 10px;
+}
+
+#description {
+  width: 46%;
+  position: absolute;
+  background-color: #5887ff;
+  left: 4%;
+  font-size: 200%;
+  border-color: #262626;
+  border-width: 2%;
+  border-style: solid;
+  top: 69%;
+  padding: 1%;
+  border-radius: 5%;
+}
+
+#stats {
+  position: absolute;
+  display: inline-block;
+  left: 65%;
+  font-size: 250%;
+  top: 72%;
+  font-size: 35px;
+}
+
+#stat1 #stat2 #stat3 {
+  position: relative;
+}
